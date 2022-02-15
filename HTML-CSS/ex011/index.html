@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes, ou simplesmente aumente e diminua o tamanho de seu navegador.</p>
+
+    <picture>
+    <source media="(max-width:750px)" srcset="imagens/foto-p.png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reporduzindo Áudios</h1>
+    <p>
+        Vamos aprender a reproduzir áudios.
+    </p>
+    <audio src="midia/Enemy (from the series Arcane League of Legends).mp3" controls ></audio>
+
+    <p>Outra maneira de inserir um audio:</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Breathe (Legends of Runeterra Version).mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Videos Hospedados Localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/72d8addd68b6692c7b82cfc37d261396.jpg" src="midia/Teste De Video2.m4v" controls></video>
+
+    <h1>Inserindo Videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gdJjc6l6iII?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/19715459?h=44630e1bce&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
